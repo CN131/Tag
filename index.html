@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Tag</title>
+    </head>
+    <body>
+        <header>Tag</header>
+        <h2>Catch the red square to win!</h2>
+        <button id="up" type="button" onclick="playerChoice('up')">Up</button> <br>
+        <button type="button" onclick="playerChoice('left')">Left</button>
+        <button type="button" onclick="playerChoice('stay')">Stay</button>
+        <button type="button" onclick="playerChoice('right')">Right</button> <br>
+        <button id="down" type="button" onclick="playerChoice('down')">Down</button>
+<br> <br> <br>
+        <table id="table">
+            <tr>
+                <th id="p03"></th>
+                <th id="p13"></th>
+                <th id="p23"></th>
+                <th id="p33"></th>
+            </tr>
+            <tr>
+                <th id="p02"></th>
+                <th id="p12"></th>
+                <th id="p22"></th>
+                <th id="p32"></th>
+            </tr>
+            <tr>
+                <th id="p01"></th>
+                <th id="p11"></th>
+                <th id="p21"></th>
+                <th id="p31"></th>
+            </tr>
+            <tr>
+                <th id="p00"></th>
+                <th id="p10"></th>
+                <th id="p20"></th>
+                <th id="p30"></th>
+            </tr>
+        </table>
+
+        <script src="script.js"></script>
+    </body>
+</html>

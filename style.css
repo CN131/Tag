@@ -1,7 +1,24 @@
+* {
+    background-color: #EAB178;
+}
+
 th {
     border: 2px black solid;
     height: 50px;
     width: 50px;
+}
+
+#rules {
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+}
+
+#buttons {
+    display: inline;
 }
 
 #p03 {
@@ -20,6 +37,10 @@ th {
 #down {
     position: relative;
     left: 40px; 
+}
+
+#table {
+    margin-left: 1cm;
 }
 
 header {

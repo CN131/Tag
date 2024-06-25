@@ -5,15 +5,17 @@ let cpuColor = '';
 
 const mapSize = [4, 4];
 for (i=0;i<mapSize[1];i++) {
-    const tr  = document.createElement('tr')
+    let tr  = document.createElement('tr')
     tr.innerHTML= '';
     document.table.appendChild(tr);
     for (i=0;i<mapSize[0];i++) {
-        const th = document.createElement('th');
+        let th = document.createElement('th');
         th.innerHTML= '';
         document.table.appendChild(th);
+        console.log(`th is ${th}`)
         } 
 }
+
 
 function playerChoice(direction) {
     let pLoc = '';
@@ -126,7 +128,7 @@ function cpuDirection(px, py) {
 
 function cpuDisplay(px, py, cx, cy) {
     const pLoc1 = String(px)+String(py);
-   console.log(pLoc1);
+//    console.log(pLoc1);
     const table1 = document.getElementById('p'+pLoc1);
     table1.style.backgroundColor = 'blue';
 

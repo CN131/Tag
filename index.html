@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Tag</title>
-    </head>
-    <body>
-        <header>Tag</header>
-        <h2>Catch the red square to win!</h2>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Tag</title>
+</head>
+
+<body>
+    <header>Tag</header>
+    <h2 id="rules">Catch the red square to win!</h2>
+    <div class="game">
+        <div id="buttons">
+            <br><br><br><br><br>
         <button id="up" type="button" onclick="playerChoice('up')">Up</button> <br>
         <button type="button" onclick="playerChoice('left')">Left</button>
         <button type="button" onclick="playerChoice('stay')">Stay</button>
         <button type="button" onclick="playerChoice('right')">Right</button> <br>
         <button id="down" type="button" onclick="playerChoice('down')">Down</button>
-<br> <br> <br>
+    </div>
+        <!-- <br> <br> <br> -->
         <table id="table">
             <tr>
                 <th id="p03"></th>
@@ -40,7 +46,8 @@
                 <th id="p30"></th>
             </tr>
         </table>
+    </div>
+    <script src="script.js"></script>
+</body>
 
-        <script src="script.js"></script>
-    </body>
 </html>
